@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1.2">
+<active.build.cfg active="Release"/>
+<target-profile device="Galaxy S" vendor="Samsung"/>
+<properties>
+<property key="privileged.access.token" value="C6060CFDE031DE6BC779A8FF99E3FD45"/>
+</properties>
+</project>

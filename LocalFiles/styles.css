@@ -1,0 +1,267 @@
+html
+{
+	/* Set page attributes. */
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;
+
+	/* Disable text selection in all browsers. */
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+#menu
+{
+width: 100%;
+height: 100px;
+margin: auto auto;
+}
+
+#button1
+{
+width: 30%;
+height: 30px;
+margin: auto auto;
+margin-left: 10px;
+margin-top: 10px;
+float: left;
+font-style: roboto yellow;
+color: #e3bb45;
+font-size: 1em;
+text-align: center;
+text-decoration: none;
+}
+
+#button2
+{
+width: 30%;
+height: 30px;
+margin: auto auto;
+margin-left: 10px;
+margin-top: 10px;
+margin-right: 0;
+float: left;
+font-style: roboto yellow;
+color: #e3bb45;
+font-size: 1em;
+text-align: center;
+text-decoration: none;
+}
+
+#button3
+{
+background-color: white;
+width: 30%;
+height: 30px;
+margin: auto auto;
+margin-right: 10px;
+margin-top: 10px;
+float: right;
+font-style: roboto yellow;
+color: #e3bb45;
+font-size: 1em;
+text-align: center;
+text-decoration: none;
+}
+
+#menu a:link
+{
+font-style: roboto yellow;
+color: #e3bb45;
+font-size: 1em;
+text-align: center;
+text-decoration: none;
+}
+
+#menu a:visited
+{
+font-style: roboto yellow;
+color: #e3bb45;
+font-size: 1em;
+text-align: center;
+text-decoration: none;
+}
+
+#menu a:hover
+{
+font-style: roboto yellow;
+color: gray;
+font-size: 1em;
+text-align: center;
+text-decoration: none;
+}
+
+#menu a:active
+{
+font-style: roboto yellow;
+color: gray;
+font-size: 1em;
+text-decoration: none;
+text-align: center;
+}
+
+
+#header
+{
+width: 100%;
+height: 51px;
+border-bottom: solid 2px gray;
+}
+
+#header img#broke
+{
+height: 50px;
+width: 10em;
+}
+
+#header img#details
+{
+float: right;
+}
+
+#new
+{
+background-color: black;
+top-margin: 100px;
+height: 100px;
+width: 100px;
+}
+
+#new img
+{
+width: 100%;
+height: 100%;
+}
+
+#new2
+{
+height: 100%;
+width: 20%;
+float: left;
+margin-left: -70px;
+}
+
+.long
+{
+margin-top: 45px;
+margin-left: 5px;
+font-size: 1.2em;
+float: left;
+background-color: white;
+}
+
+.brief
+{
+float: right;
+background-color: none;
+width: 20px;
+height: 20px;
+}
+.brief img
+{
+position: absolute;
+padding-top: 40px;
+left: 260px;
+}
+
+
+.items
+{
+height: 100px;
+width: 90%;
+overflow: hidden;
+font-size: 0.8em;
+float: right;
+margin-right: 0;
+padding: 0;
+background: url('images/YelllowScaleBG.png');
+background-size: 100%;
+background-position: 0px -25px;
+}
+
+.items a:link
+{
+text-align: center;
+width: 100%;
+margin-top: 10px;
+font-size: 1.2em;
+color: white;
+text-shadow: 1px 2px #888888;
+text-decoration: none;
+float: left;
+}
+
+.items a:hover
+{
+text-align: center;
+width: 100%;
+margin-top: 10px;
+font-size: 1.2em;
+color: white;
+text-shadow: 1px 2px #888888;
+text-decoration: none;
+float: left;
+}
+
+.items a:active
+{
+text-align: center;
+width: 100%;
+margin-top: 10px;
+font-size: 1.2em;
+color: white;
+text-shadow: 1px 2px #888888;
+text-decoration: none;
+float: left;
+}
+
+.items a:visited
+{
+text-align: center;
+width: 100%;
+margin-top: 10px;
+font-size: 1.2em;
+color: white;
+text-shadow: 1px 2px #888888;
+text-decoration: none;
+float: left;
+}
+
+#data
+{
+height: 100%;
+width: 80%;
+float: right;
+}
+
+#page-wrap
+{
+width: 100%;
+height: 100%;
+}
+
+#info
+{
+background:#de9a44; 
+margin:3px; 
+width:80px; 
+height:40px; 
+display:none; float:left; 
+}
+
+.price
+{
+display: none;
+position: absolute;
+padding-top: 3px;
+padding-left: 5px;
+width: 67%;
+height: 100px;
+background-color: black;
+color: white;
+font-size: 0.8em;
+}

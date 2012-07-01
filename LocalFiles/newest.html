@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+	This application shows how to communicate from JavaScript to C++.
+	When the LogoBox is touched, a call is made to C++ to make the
+	device vibrate. The C++ code that gets called is in main.cpp.
+-->
+<html>
+<head>
+
+<!--
+	Import the bridge library for communication between
+	JavaScript and C++.
+-->
+<script src="js/bridge.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/data2.js"></script>
+<link rel="stylesheet" href="styles.css" />
+<script>
+/**
+ * Array with texts for the TextBox.
+ */
+var TextArray = ["Touch Me!", "Welcome to MoSync and HTML5!"];
+
+/**
+ * Change the text in the TextBox. Swaps between array elements.
+ */
+function SwapText()
+{
+	var textBox = document.getElementById("TextBox");
+	if (textBox.innerHTML == TextArray[0])
+	{
+		textBox.innerHTML = TextArray[1];
+	}
+	else
+	{
+		textBox.innerHTML = TextArray[0];
+	}
+}
+
+/**
+ * Make device vibrate and update the text shown
+ * in the user interface.
+ */
+function OnTouch()
+{
+	Vibrate();
+}
+
+/**
+ * Make device vibrate.
+ */
+function Vibrate()
+{
+	// This is how a message is passed to C++ when
+	// using the bridge library.
+	bridge.messagehandler.send({messageName: "Vibrate"}, null);
+}
+</script>
+</head>
+
+<body>
+<nav id="menu" onclick="OnTouch()">
+<div id="header"><img id="broke" src="images/thisiswhyimbroke.jpg"></img><a href="#"><img id="details" src="images/details.png" width="25px" height="35px"></img></a></div>
+<div id="button1"><a href="index.html">POPULAR</a></div>
+<div id="button2"><a href="newest.html">NEWEST</a></div>
+<div id="button3"><a href="help.html">HELP</a></div>
+</nav>
+<div id="data">
+<div id="info"></div>
+<div id="page-wrap"></div>
+<div id="images"></div>
+</div>
+
+
+</body>
+<script>
+	SwapText();
+</script>
+</html>
